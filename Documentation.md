@@ -1,7 +1,5 @@
 Laptop Rental
-
 DATA MODEL
-
 API
 
 API CODES - 200, 400, 401, 404, 500
@@ -35,6 +33,48 @@ c)on findById query error, make sure whether it is a data not found error or ser
 d) returns {msg: “Internal server error”}
 
 Models:
-1.laptops Schema
+1.laptops Schema:
+1.Brand: String,
+2.Model: String,
+3.Screen: String,
+4.Processor: String,
+5.Ram: String,
+6.SSD: String,
+7.HDD: String,
+8.GPU: String,
+9.stock: Number,
+10.isBooked: Boolean,
+11.isRented: Boolean,
+12.rentPerDay: Number,
+13.totalIncome: Number, default:0
+14.rentedAmount: Number, default:0
+15.isAvailable: Boolean, default:true
+
+    API List:
+    1. Show all Laptops
+        @GET api/laptops/showLaptop
+        @METHOD showlaptops
+        @RESPONSE {laptops: laptops}
+
+    2. Show Laptop By ID
+        @GET api/laptops/:id
+        @METHOD showLaptopById
+        @Response {laptop:laptop}
+
+    3. Insert Laptop
+        @POST api/laptops/insert
+        @METHOD insertLaptop
+        @RESPONSE {laptop:laptop}
+
+    4. Edit Laptop
+        @PUT api/laptop/:id
+        @METHOD editLaptop
+        @RESPONSE {laptop:laptop}
+
+    5. Delete Laptop
+        @DELETE api/laptop/:id
+        @METHOD deleteLaptop
+        @REsponse {laptop:laptop}
+
 2.order
 3.user
