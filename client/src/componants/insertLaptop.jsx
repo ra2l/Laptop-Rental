@@ -128,6 +128,11 @@ class insertLaptop extends Component {
             />
           </div>
         </div>
+        <div className="form-row laptop-form-row">
+          <div className="col-md-4 laptop-form-label">
+            <button> Submit</button>
+          </div>
+        </div>
       </form>
     );
   }
