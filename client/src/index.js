@@ -6,7 +6,7 @@ import "./App.css";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import InsertLaptop from "./componants/insertLaptop";
-import ShowLaptop from "./componants/showLaptop";
+//import ShowLaptop from "./componants/showLaptop";
 
 ReactDOM.render(<InsertLaptop />, document.getElementById("root"));
 
