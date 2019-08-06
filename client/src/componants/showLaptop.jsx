@@ -15,7 +15,7 @@ class showLaptop extends Component {
     return (
       <div>
         {this.state.laptops.map(laptop => (
-          <div key={laptop.model}>{laptop.Model}</div>
+          <div key={laptop.Model}>{laptop.Model}</div>
         ))}
       </div>
     );
