@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+
 class showLaptop extends Component {
   state = {
     laptops: []
@@ -14,9 +15,11 @@ class showLaptop extends Component {
   render() {
     return (
       <div>
-        {this.state.laptops.map(laptop => (
-          <div key={laptop.Model}>{laptop.Model}</div>
-        ))}
+        <div>
+          {this.state.laptops.map(laptop => (
+            <div key={laptop.Model}>{laptop.Model}</div>
+          ))}
+        </div>
       </div>
     );
   }
