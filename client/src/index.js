@@ -5,8 +5,11 @@ import "./App.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.min.css";
+
 //import InsertLaptop from "./componants/insertLaptop";
 //import ShowLaptop from "./componants/showLaptop";
+//import LaptopCard from "./componants/laptopCard";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

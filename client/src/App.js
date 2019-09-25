@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import insertLaptop from "./componants/insertLaptop";
 import showLaptop from "./componants/showLaptop";
 import Navbar from "./componants/navbar";
+import laptopCard from "./componants/laptopCard";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route path="/" component={showLaptop} exact />
         <Route path="/insert" component={insertLaptop} />
+        <Route path="/card" component={laptopCard} />
       </Switch>
     </BrowserRouter>
   );

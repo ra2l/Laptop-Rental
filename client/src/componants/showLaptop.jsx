@@ -1,23 +1,27 @@
 import React, { Component } from "react";
 import axios from "axios";
+import LaptopCard from "./laptopCard";
 
 class showLaptop extends Component {
   state = {
-    laptops: []
+    laptops: [],
+    count: 0
   };
 
   componentDidMount() {
     axios.get("http://localhost:3000/api/laptops/showLaptop").then(res => {
       this.setState({ laptops: res.data });
-      console.log(res.data);
+      console.log(this.state.laptops);
     });
   }
   render() {
     return (
-      <div>
-        <div>
+      <div class="container">
+        <div class="row">
           {this.state.laptops.map(laptop => (
-            <div key={laptop.Model}>{laptop.Model}</div>
+            <div className="col-lg-4" key={laptop.Model}>
+              <LaptopCard key={laptop._id} id={laptop._id} laptop={laptop} />
+            </div>
           ))}
         </div>
       </div>

@@ -5,16 +5,20 @@ class Navabar extends Component {
   state = {};
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixedtop">
         <ul className="navbar-nav">
-          <li className="nav-item">
+          <li className="nav-item active">
             <a className="nav-link">
-              <NavLink to={"/"}>Laptops</NavLink>
+              <NavLink className="nav-text" to={"/"}>
+                Laptops
+              </NavLink>
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link">
-              <NavLink to={"/insert"}>Insert</NavLink>
+              <NavLink className="nav-text" to={"/insert"}>
+                Insert
+              </NavLink>
             </a>
           </li>
         </ul>

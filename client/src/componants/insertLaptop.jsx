@@ -173,7 +173,7 @@ class insertLaptop extends Component {
               </div>
               <div className="col-md-4">
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
                   placeholder="Insert Stock Amount"
                   onChange={this.handleStock}
@@ -186,7 +186,7 @@ class insertLaptop extends Component {
               </div>
               <div className="col-md-4">
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
                   placeholder="Insert Rent Per Day"
                   onChange={this.handleRent}
@@ -195,7 +195,10 @@ class insertLaptop extends Component {
             </div>
             <div className="form-row laptop-form-row">
               <div className="col-md-4 laptop-form-label">
-                <button type="submit"> Submit</button>
+                <button className="btn btn-secondary" type="submit">
+                  {" "}
+                  Submit
+                </button>
               </div>
             </div>
           </form>
